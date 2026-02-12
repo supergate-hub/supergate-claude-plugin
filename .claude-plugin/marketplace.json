@@ -15,6 +15,14 @@
       "version": "0.1.0",
       "category": "productivity",
       "keywords": ["work-log", "daily-log", "obsidian", "productivity", "korean"]
+    },
+    {
+      "name": "obsidian",
+      "source": "./plugins/obsidian",
+      "description": "Capture external knowledge from articles, YouTube videos, and GitHub repositories into structured Obsidian documents",
+      "version": "0.1.0",
+      "category": "productivity",
+      "keywords": ["obsidian", "summarize", "translate", "github", "youtube"]
     }
   ]
 }
