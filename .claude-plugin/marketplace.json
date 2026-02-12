@@ -1,0 +1,20 @@
+{
+  "name": "supergate-claude-plugin",
+  "owner": {
+    "name": "Supergate"
+  },
+  "metadata": {
+    "description": "Supergate 팀 공유 Claude Code 플러그인 모음",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "work-logger",
+      "source": "./plugins/work-logger",
+      "description": "업무 내역을 다양한 소스(Obsidian vault, Claude 세션, 미팅 노트)에서 수집하여 구조화된 로그로 생성",
+      "version": "0.1.0",
+      "category": "productivity",
+      "keywords": ["work-log", "daily-log", "obsidian", "productivity", "korean"]
+    }
+  ]
+}
