@@ -49,6 +49,7 @@ Capture external knowledge from articles, YouTube videos, and GitHub repositorie
 - `translate-article` - Translate a technical article URL (full translation, no summarization)
 - `translate-youtube` - Translate a YouTube transcript (full translation, no summarization)
 - `github-project` - Analyze a GitHub repository and create an Obsidian project document
+- `leetcode-review` - Convert LeetCode problem review conversations into structured Obsidian notes
 
 **Usage:**
 ```bash
@@ -58,6 +59,8 @@ Capture external knowledge from articles, YouTube videos, and GitHub repositorie
 /translate-article https://example.com/article
 /translate-youtube https://youtube.com/watch?v=xxx
 /github-project https://github.com/owner/repo
+/leetcode-review               # Auto-detect from current conversation
+/leetcode-review 190           # By problem number (uses repo code)
 ```
 
 ## Contributing
