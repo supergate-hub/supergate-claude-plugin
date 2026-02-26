@@ -46,6 +46,7 @@ Capture external knowledge from articles, YouTube videos, and GitHub repositorie
 **Included commands:**
 - `summarize-article` - Summarize and translate a technical article URL into an Obsidian note
 - `summarize-youtube` - Summarize and translate a YouTube video into an Obsidian note
+- `summarize-pdf` - Read a technical book PDF chapter by chapter and create structured Obsidian notes
 - `translate-article` - Translate a technical article URL (full translation, no summarization)
 - `translate-youtube` - Translate a YouTube transcript (full translation, no summarization)
 - `github-project` - Analyze a GitHub repository and create an Obsidian project document
@@ -56,6 +57,10 @@ Capture external knowledge from articles, YouTube videos, and GitHub repositorie
 /summarize-article https://example.com/article
 /summarize-youtube https://youtube.com/watch?v=xxx
 /summarize-youtube kr https://youtube.com/watch?v=xxx  # Korean transcript preferred
+/summarize-pdf ~/Downloads/book.pdf        # Show TOC and select chapters
+/summarize-pdf ~/Downloads/book.pdf 3      # Process chapter 3 only
+/summarize-pdf ~/Downloads/book.pdf 1-5   # Process chapters 1-5
+/summarize-pdf ~/Downloads/book.pdf p.45-80 # Process specific page range
 /translate-article https://example.com/article
 /translate-youtube https://youtube.com/watch?v=xxx
 /github-project https://github.com/owner/repo
