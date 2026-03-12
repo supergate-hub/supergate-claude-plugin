@@ -51,6 +51,7 @@ Capture external knowledge from articles, YouTube videos, and GitHub repositorie
 - `translate-youtube` - Translate a YouTube transcript (full translation, no summarization)
 - `github-project` - Analyze a GitHub repository and create an Obsidian project document
 - `leetcode-review` - Convert LeetCode problem review conversations into structured Obsidian notes
+- `publish-confluence` - Publish an Obsidian document to Confluence with Mermaid diagrams and images
 
 **Usage:**
 ```bash
@@ -66,6 +67,8 @@ Capture external knowledge from articles, YouTube videos, and GitHub repositorie
 /github-project https://github.com/owner/repo
 /leetcode-review               # Auto-detect from current conversation
 /leetcode-review 190           # By problem number (uses repo code)
+/publish-confluence "Clean Architecture - Chapter 3"       # Publish to Confluence (asks for space/parent)
+/publish-confluence "API 설계 가이드" DEV 1228177436        # With space key and parent page ID
 ```
 
 ## Contributing

@@ -3,5 +3,5 @@
   "description": "Capture external knowledge from articles, YouTube videos, and GitHub repositories into structured Obsidian documents",
   "version": "0.1.0",
   "author": { "name": "Supergate" },
-  "keywords": ["obsidian", "summarize", "translate", "github", "youtube", "knowledge-capture"]
+  "keywords": ["obsidian", "summarize", "translate", "github", "youtube", "knowledge-capture", "confluence", "publish"]
 }
