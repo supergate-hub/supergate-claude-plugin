@@ -30,6 +30,7 @@ Collects work activities from multiple sources and generates structured daily re
 **Included skills:**
 - `daily-work-logger` - Analyze yesterday's work from Obsidian vault, Claude sessions, and meeting notes
 - `learning-tracker` - Extract new tech/library/concept learnings from sessions into TIL documents
+- `monthly-work-summary` - Aggregate weekly summaries into a monthly work report with KPT retrospective
 
 **Usage:**
 ```bash
@@ -37,6 +38,8 @@ Collects work activities from multiple sources and generates structured daily re
 /daily-work-logger 2026-02-11 # Specific date
 /learning-tracker             # Yesterday's learnings
 /learning-tracker 2026-02-11  # Specific date
+/monthly-work-summary         # Previous month summary
+/monthly-work-summary 2026-03 # Specific month
 ```
 
 ### obsidian
