@@ -8,7 +8,7 @@ A shared plugin marketplace for the Supergate team.
 
 | Plugin | Description | Version |
 |--------|-------------|---------|
-| [work-logger](./plugins/work-logger/) | Collect and organize daily work activities into structured logs | 0.1.0 |
+| [work-logger](./plugins/work-logger/) | Collect Claude/Codex sessions, Obsidian docs, and meeting notes into structured work logs | 0.2.0 |
 | [obsidian](./plugins/obsidian/) | Capture external knowledge into structured Obsidian documents | 0.1.0 |
 
 ## Installation
@@ -25,25 +25,32 @@ A shared plugin marketplace for the Supergate team.
 
 ### work-logger
 
-Collects work activities from multiple sources and generates structured daily reports.
+Collects work activities from Claude Code and Codex sessions, Obsidian documents, and meeting notes. The daily routine writes a work log and can create 3-5 Apple Reminders in `Daily Focus` with links back to the generated work-log note.
 
 **Included skills:**
-- `daily-work-logger` - Analyze yesterday's work from Obsidian vault, Claude sessions, and meeting notes
+- `daily-work-logger` - Analyze yesterday's work from Obsidian vault, Claude/Codex sessions, and meeting notes
+- `work-log-wrap-up` - Internal shared helper skill with collection and Reminders scripts
+- `weekly-work-logger` - Aggregate daily work logs into a weekly work summary
+- `monthly-work-logger` - Aggregate weekly summaries into a monthly work report
 - `learning-tracker` - Extract new tech/library/concept learnings from sessions into TIL documents
-- `weekly-work-summary` - Aggregate daily notes into a weekly work summary with sub-agent parallel processing
-- `monthly-work-summary` - Aggregate weekly summaries into a monthly work report with KPT retrospective
+- `weekly-work-summary` - Compatibility name for weekly summaries
+- `monthly-work-summary` - Compatibility name for monthly summaries
 
 **Usage:**
 ```bash
 /daily-work-logger            # Yesterday's log
 /daily-work-logger 2026-02-11 # Specific date
+/weekly-work-logger           # Previous week summary
+/weekly-work-logger 2026-02-11 # Week containing the base date
+/monthly-work-logger          # Previous month summary
+/monthly-work-logger 2026-03  # Specific month
 /learning-tracker             # Yesterday's learnings
 /learning-tracker 2026-02-11  # Specific date
-/weekly-work-summary          # Previous week summary
-/weekly-work-summary 2026-W11 # Specific week
-/monthly-work-summary         # Previous month summary
-/monthly-work-summary 2026-03 # Specific month
+/weekly-work-summary          # Compatibility alias
+/monthly-work-summary         # Compatibility alias
 ```
+
+See [work-logger README](./plugins/work-logger/README.md) for environment variables and automation setup.
 
 ### obsidian
 

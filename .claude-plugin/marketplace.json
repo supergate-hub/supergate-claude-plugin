@@ -11,10 +11,10 @@
     {
       "name": "work-logger",
       "source": "./plugins/work-logger",
-      "description": "업무 내역을 다양한 소스(Obsidian vault, Claude 세션, 미팅 노트)에서 수집하여 구조화된 로그로 생성",
-      "version": "0.1.0",
+      "description": "업무 내역을 Claude/Codex 세션, Obsidian vault, 미팅 노트에서 수집하고 Apple Reminders에 오늘 할 일을 생성",
+      "version": "0.2.0",
       "category": "productivity",
-      "keywords": ["work-log", "daily-log", "obsidian", "productivity", "korean"]
+      "keywords": ["work-log", "daily-log", "claude", "codex", "obsidian", "reminders", "productivity", "korean"]
     },
     {
       "name": "obsidian",
