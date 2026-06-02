@@ -1,14 +1,13 @@
 ---
-name: weekly-work-summary
+name: weekly-work-logger
 description: |
   실행 기준 저번 주(월~일)의 daily work log를 종합해 주간 업무 요약을 work-log/weekly/에 저장.
-  weekly-work-logger와 같은 Claude/Codex 세션 중심 루틴의 호환 이름.
-  "주간 정리", "weekly summary", "이번 주 정리", "/weekly-work-summary" 요청 시 사용.
+  "주간 정리", "weekly log", "이번 주 정리", "/weekly-work-logger" 요청 시 사용.
 argument-hint: "[base YYYY-MM-DD]"
 user_invocable: true
 ---
 
-# Weekly Work Summary
+# Weekly Work Logger
 
 Daily Work Log를 소스로 사용한다. Daily가 Claude/Codex 세션 중심으로 작성되므로 weekly도 두 도구의 작업 내역을 함께 요약한다.
 

@@ -1,14 +1,13 @@
 ---
-name: monthly-work-summary
+name: monthly-work-logger
 description: |
   실행 기준 저번 달의 weekly work log를 종합해 월간 업무 요약을 work-log/monthly/에 저장.
-  monthly-work-logger와 같은 Claude/Codex 세션 중심 루틴의 호환 이름.
-  "월간 정리", "monthly summary", "지난달 정리", "/monthly-work-summary" 요청 시 사용.
+  "월간 정리", "monthly log", "지난달 정리", "/monthly-work-logger" 요청 시 사용.
 argument-hint: "[YYYY-MM]"
 user_invocable: true
 ---
 
-# Monthly Work Summary
+# Monthly Work Logger
 
 Weekly Work Log를 소스로 사용한다. Weekly가 없으면 같은 월의 daily 파일로 fallback한다.
 
